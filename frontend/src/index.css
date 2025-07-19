@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+/* Change default react-slick arrows color and style */
+.slick-prev:before,
+.slick-next:before {
+  color: rgb(37, 37, 37) !important; /* change 'black' to any color you like */
+  opacity: 0.8 !important; /* ensure it's fully visible */
+  font-size: 40px !important; /* adjust size if you want */
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-margin-top: 70px;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
