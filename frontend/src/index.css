@@ -5,9 +5,7 @@
 /* Change default react-slick arrows color and style */
 .slick-prev:before,
 .slick-next:before {
-  color: rgb(37, 37, 37) !important; /* change 'black' to any color you like */
-  opacity: 0.8 !important; /* ensure it's fully visible */
-  font-size: 40px !important; /* adjust size if you want */
+  display: none;
 }
 
 html {
