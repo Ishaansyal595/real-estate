@@ -134,14 +134,14 @@ const PropertiesDetails = () => {
         </div>
 
         {/* Map */}
-        <div className="w-full md:w-1/3">
+        <div className="w-full md:w-1/2 z-0">
           <PropertyMap title={property.title} city={property.city} />
         </div>
       </div>
 
       {/* Modal */}
       {isModalOpen && (
-        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-100">
           <div className="bg-white p-4 rounded max-w-3xl w-full max-h-[80vh] overflow-auto">
             <button
               className="mb-2 text-red-500 font-semibold"
@@ -149,13 +149,13 @@ const PropertiesDetails = () => {
             >
               Close
             </button>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
+            <div className="flex flex-col gap-2">
               {property.images.map((img, idx) => (
                 <img
                   key={idx}
                   src={img}
                   alt={`modal-${idx}`}
-                  className="w-full h-40 object-cover rounded"
+                  className="w-full h-50 object-cover rounded"
                 />
               ))}
             </div>
