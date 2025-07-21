@@ -12,7 +12,11 @@ const app = express();
 
 const PORT = process.env.PORT;
 
-app.use(cors({origin: "https://real-estate-jade-alpha.vercel.app"}));
+app.use(
+  cors({
+    origin: "https://real-estate-jade-alpha.vercel.app",
+  })
+);
 app.use(express.json());
 
 app.use("/api/user", UserRouter);
